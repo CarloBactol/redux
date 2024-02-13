@@ -1,0 +1,20 @@
+{
+  "name": "redux",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon app.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@reduxjs/toolkit": "^2.2.0"
+  },
+  "verbose": true,
+  "ignore": ["*.test.js", "node_modules"],
+  "execMap": {
+    "js": "node --harmony"
+  }
+}
