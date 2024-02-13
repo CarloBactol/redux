@@ -1,5 +1,6 @@
 // import package 
 const {createAction, createReducer, configureStore, nanoid} = require("@reduxjs/toolkit");
+const logger = require("redux-logger").createLogger();
 
 // InitialState 
 const initialState = {
@@ -66,6 +67,7 @@ const counterSlice2 = createAction(initialState, {
 // Store
 const store = configureStore({
     reducer: counterSlice,
+    middleware: (getDefaultMidlleware) => getDefaultMidlleware().concat(logger),
 });
 
 //dispatch action

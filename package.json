@@ -4,16 +4,21 @@
   "description": "",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon app.js"
+    "start": "nodemon createAsyncThunk.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@reduxjs/toolkit": "^2.2.0"
+    "@reduxjs/toolkit": "^2.2.0",
+    "axios": "^1.6.7",
+    "redux-logger": "^3.0.6"
   },
   "verbose": true,
-  "ignore": ["*.test.js", "node_modules"],
+  "ignore": [
+    "*.test.js",
+    "node_modules"
+  ],
   "execMap": {
     "js": "node --harmony"
   }
